@@ -240,8 +240,7 @@ nav{
     letter-spacing: 1px;
     line-height: 50px;
     text-align: center;
-    width: 70%;
-    margin: 4rem auto;
+    margin: 4rem 0;
     padding: 1rem;
 }
 
@@ -319,7 +318,6 @@ nav{
     font-family: "Abril Fatface";
     font-size: 35px;
     margin: 0.5rem 0;
-    padding: 2rem 1.5rem 1rem 3rem;
     width: 95%;
     letter-spacing: 0.8px;
     line-height: 46px;
@@ -429,7 +427,7 @@ nav{
 .prevention-tips-text h3{
     color: #3BA361;
     font-family: "Abril Fatface";
-    font-size: 60px;
+    font-size: 50px;
     letter-spacing: 2px;
     line-height: 60px;
 }
@@ -451,6 +449,7 @@ nav{
     text-decoration: none;
     transition: 0.5s !important;
     border: 1px solid #142725;
+    font-size: 25px;
 }
 
 .download-flyer-btn:hover{
@@ -1174,8 +1173,8 @@ footer{
 
     .download-flyer-btn{
         position: relative;
-        top: 120px;
-        right: 190px;
+        top: 130px;
+        right: 120px;
         background-color: #142725;
         color: #3BA361;
         padding: 2rem;
