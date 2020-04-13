@@ -768,7 +768,6 @@ footer{
     /* HEADER */
     header{
         background: #142725;
-        height: 100vh;
     }
 
     nav{
@@ -972,14 +971,15 @@ footer{
 
     .mini-gallery{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin:2rem 2rem 0 2rem;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        justify-items: stretch;
+        align-items: center;
         padding: 0;
-        width: 95%;
+        width: 100%;
     }
     
     .mini-gallery img{
-        width: auto;
+        width:auto;
     }
     
     #img-3{
@@ -1030,6 +1030,8 @@ footer{
     .food-scope{
         border: 1px solid #979797;
         padding-bottom: 3rem;
+        position: relative;
+        left: -15px;
     }
 
     .food-scope > p{
@@ -1115,12 +1117,13 @@ footer{
 
     .prevention-tips{
         background-color: #fff;
-        padding: 0 1rem ;
+        width: 90%;
     }
 
     .flyer-details{
         display: flex;
         flex-direction: row;
+        position: relative;
     }
 
     .flyer{
@@ -1145,6 +1148,7 @@ footer{
         position: relative;
         margin: 2rem;
         padding: 2rem;
+        padding-left:0 ;
         left:100px ;
         width: 40%;
         justify-self: center;
@@ -1171,7 +1175,7 @@ footer{
     .download-flyer-btn{
         position: relative;
         top: 120px;
-        right: 130px;
+        right: 190px;
         background-color: #142725;
         color: #3BA361;
         padding: 2rem;
