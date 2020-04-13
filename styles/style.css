@@ -918,8 +918,8 @@ footer{
         display: block;
         position: relative;
         top: -70px;
-        left: 4%;
-        padding: 3rem 10rem 10rem 3rem;
+        left: 1%;
+        padding: 3rem 10rem 8rem 3rem;
         background-color: #ABD0B8;
         height: 90vh;
         width: 80%;
@@ -951,7 +951,6 @@ footer{
     
     .text-2{
         display: block;
-        flex-direction: unset;
         position: relative;
         bottom:300px ;
         color: #3BA361;
@@ -963,6 +962,7 @@ footer{
         width: 60%;
         margin: auto;
     }
+    
 
     /* Mini gallery */
 
