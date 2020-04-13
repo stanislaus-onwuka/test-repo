@@ -229,6 +229,8 @@ nav{
 
 .food-bank .donate-btn{
     display: block;
+    margin: 1rem;
+    padding: 1.5rem;
 }
 
 .text-2{
@@ -254,13 +256,12 @@ nav{
 
 
 .mini-gallery{
-    display: grid;
-    grid-template-columns: 90%;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    align-items: center;
-    justify-items: center;
+    align-content: center;
+    justify-content: center;
     margin: 0 0rem;
-    padding-left: 2.5rem;
 }
 
 .mini-gallery img{
@@ -316,12 +317,12 @@ nav{
 
 .food-scope > p{
     font-family: "Abril Fatface";
-    font-size: 46px;
+    font-size: 35px;
     margin: 0.5rem 0;
     padding: 2rem 1.5rem 1rem 3rem;
     width: 95%;
     letter-spacing: 0.8px;
-    line-height: 56px;
+    line-height: 46px;
 }
 
 .food-scope span{
@@ -408,14 +409,12 @@ nav{
     display: block;
     background-color: #3BA361;
     width: 100%;
-    height: 778px;
     padding: 2rem;
 }
 
 .flyer img{
     width: 97%;
     max-width:660px;
-    height: 600px;
     margin: 1.6rem 0.5rem;
 }
 
@@ -448,7 +447,7 @@ nav{
 .download-flyer-btn{
     background-color: #142725;
     color: #3BA361;
-    padding: 2rem;
+    padding: 1rem;
     text-decoration: none;
     transition: 0.5s !important;
     border: 1px solid #142725;
@@ -496,7 +495,7 @@ nav{
     margin-top: 3rem;
     color: #3BA361;
     font-family: "Archivo Medium";
-    font-size: 25px;
+    font-size: 23px;
     text-decoration: none;
     font-weight: 900;
     
@@ -627,14 +626,14 @@ footer{
 
 .footer-item{
     padding: 5rem;
-    width: 100%;
+    width: 90.7%;
     border: 1px solid #3BA361;
 }
 
 #logo-footer p{
     color: #FFFFFF;
     font-family: "Archivo Medium";
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 0.8px;
     line-height: 35px;
     width: 90%;
@@ -656,7 +655,7 @@ footer{
     margin: 2rem 0;
     color: #FFFFFF;
     font-family: "Archivo Medium";
-    font-size: 40px;
+    font-size: 25px;
     letter-spacing: 1.33px;
     line-height: 43px;
     text-align: center;
@@ -699,7 +698,7 @@ footer{
 #rc-number,
 #reg-address{
     padding: 2rem;
-    width: 60%;
+    width: 90%;
 }
 
 #socials-footer{
@@ -719,12 +718,13 @@ footer{
 
 #ui-ad{
     padding: 3rem 0;
-    margin: 1.5rem;
+    margin: 1.5rem auto;
     color: #3BA361;
     font-family: "Archivo Medium";
     font-size: 20px;
     letter-spacing: 0.6px;
     line-height: 20px;
+
 }
 
 #ui-ad a{
@@ -736,7 +736,7 @@ footer{
     display: none;
     position: fixed;
     bottom: 50px;
-    right: 35px;
+    right: 75px;
     background-color: #142725;
     border-radius: 100px;
     border: 1px solid #3BA361;
@@ -975,7 +975,7 @@ footer{
         grid-template-columns: 1fr 1fr 1fr;
         margin:2rem 2rem 0 2rem;
         padding: 0;
-        width: 90%;
+        width: 95%;
     }
     
     .mini-gallery img{
