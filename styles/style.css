@@ -919,10 +919,10 @@ footer{
         position: relative;
         top: -70px;
         left: 1%;
-        padding: 3rem 10rem 8rem 3rem;
+        padding: 3rem 12rem 8rem 3rem;
         background-color: #ABD0B8;
         height: 90vh;
-        width: 80%;
+        width: 85%;
         max-width: 670px;
         color: #3BA361;
         font-family: "Abril Fatface";
@@ -933,36 +933,35 @@ footer{
     
     #food-bank-img{
         position: relative;
-        bottom: 815px;
-        left: 50%;
+        bottom: 800px;
+        left: 55%;
         width: 80%;
-        height: 80vh;
+        height: 70vh;
         max-width: 515px;
     }
     
     .food-bank .donate-btn{
         display: block;
         position: relative;
-        bottom: 750px;
+        bottom: 720px;
+        left: -30px;
         padding: 1rem 3rem;
-        flex-direction: unset;
         width:fit-content;
     }
     
     .text-2{
-        display: block;
         position: relative;
-        bottom:300px ;
+        bottom:350px ;
         color: #3BA361;
         font-family: "Abril Fatface";
         font-size: 60px;
         letter-spacing: 2px;
-        line-height: 80px;
+        line-height: 60px;
         text-align: center;
-        width: 60%;
+        width: 55%;
         margin: auto;
     }
-    
+
 
     /* Mini gallery */
 
@@ -1018,7 +1017,7 @@ footer{
 
     .help-section .floating-element{
         position: relative;
-        top: -280px;
+        top: -250px;
         right: -300px;
         bottom: 0;
         background-color: #fff;
@@ -1034,9 +1033,9 @@ footer{
 
     .food-scope > p{
         font-family: "Abril Fatface";
-        font-size: 46px;
+        font-size: 40px;
         margin: 0.5rem 0;
-        padding: 2rem 1.5rem 1rem 3rem;
+        padding: 2rem 1.5rem 3rem 3rem;
         width: 95%;
         letter-spacing: 0.8px;
         line-height: 56px;
@@ -1050,8 +1049,8 @@ footer{
         display: flex;
         flex-direction: row;
         position: relative;
-        top: 60px;
-        right: 400px;
+        top: 30px;
+        right: 500px;
         width: 850px;
     }
 
@@ -1193,7 +1192,7 @@ footer{
         position: relative;
         bottom: -80px;
         flex-direction: row;
-        width: 65%;
+        width: 75%;
         margin: 15rem auto 2rem auto;
         justify-content: space-evenly;
         align-content: center;
@@ -1219,7 +1218,7 @@ footer{
 
     .click-to-donate-btn{
         background-color: #142725;
-        padding: 3rem 2rem;
+        padding: 2rem;
         font-family: "Archivo Medium";
         font-size: 25px;
         text-decoration: none;
@@ -1293,7 +1292,7 @@ footer{
     }
 
     .bacs-payment-body-1 li{
-        margin: 0.3rem 0;
+        margin: 0.7rem 0;
         padding: 0.1rem;
         text-align: left;
     }
@@ -1303,7 +1302,7 @@ footer{
     }
 
     .bacs-payment-body-2 li{
-        margin: 0.3rem 0;
+        margin: 0.7rem 0;
         padding: 0.1rem;
         text-align: left;
     }
