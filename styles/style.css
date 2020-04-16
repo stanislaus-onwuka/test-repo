@@ -2,6 +2,10 @@
  @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
  @import url('https://fonts.googleapis.com/css?family=Archivo&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+
+ :root{
+    --variable-width: 0;
+}
  
 *,
 body,
@@ -12,10 +16,14 @@ html{
     scroll-behavior: smooth;
 }
 
+/* body{
+    display: none;
+} */
+
 /* Header */
 header{
     background: #142725;
-    height: 120vh;
+    height: 80%;
 }
 
 nav{
@@ -45,18 +53,18 @@ nav{
     position: relative;
     margin-left:3rem ;
     width: 100%;
-    height: 15vh;
+    height: 18vh;
     background-color: #ABD0B8;
     font-family: "Archivo Medium";
     font-size: 20px;
     letter-spacing: 1px;
     line-height: 30px;
-    margin: 1rem 0;
+    margin: 0;
 }
 
 .progress-bar {
-    width: 70%;
-    height: 15vh;
+    width: var(--variable-width);
+    height: 18vh;
     background: #3BA361;
     position :relative;
     -webkit-animation: bar-move 5s normal ; /* Safari 4.0 - 8.0 */
@@ -79,7 +87,7 @@ nav{
 
 .completed h3,
 .completed p{
-    text-align: right;
+    text-align: left;
 }
 
 .uncompleted{
@@ -174,7 +182,6 @@ nav{
     z-index: 10;
     border: 1px solid #3BA361;
     border-left: none;
-    background-color: #142725;
 }
 
 
@@ -333,18 +340,7 @@ nav{
     width: auto;
 }
 
-
-.donations .donation-progress-div p{
-    font-size: 25px;
-    position: relative;
-    right: 20px;
-    color: #000;
-    padding: 0.5rem 0;
-    letter-spacing: 0.8px;
-    line-height: 26px;
-}
-
-.donations .donation-progress-div{
+.food-scope-donation-progress{
     width: 100% !important;
     margin-left: 0;
     font-size: 20px;
@@ -356,22 +352,34 @@ nav{
     margin: 2rem 0;
 }
 
-.donations .progress-bar{
-    width: 50%;
+
+.food-scope-donation-progress p{
+    font-size: 25px;
+    position: relative;
+    right: 20px;
+    color: #000;
+    padding: 0.5rem 0;
+    letter-spacing: 0.8px;
+    line-height: 26px;
 }
 
-.donations .donation-progress-div .completed{
+
+.food-scope-donation-progress .progress-bar{
+    width: var(--variable-width);
+}
+
+.food-scope-donation-progress .completed{
     padding-top: 1rem;
 }
 
-.donations .donation-progress-div .uncompleted{
+.food-scope-donation-progress .uncompleted{
     position: relative;
     left: 68%;
     top: -90px;
     width: fit-content;
 }
 
-.donations .donation-progress-div h3{
+.food-scope-donation-progress h3{
     margin-right: 1rem;
 }
 
@@ -624,8 +632,8 @@ footer{
 }
 
 .footer-item{
-    padding: 5rem;
-    width: 90.7%;
+    padding: 4.5rem;
+    width: 100%;
     border: 1px solid #3BA361;
 }
 
@@ -635,7 +643,7 @@ footer{
     font-size: 22px;
     letter-spacing: 0.8px;
     line-height: 35px;
-    width: 90%;
+    width: 100%;
     margin: 1.5rem auto;
     text-align: left;
 }
@@ -697,12 +705,11 @@ footer{
 #rc-number,
 #reg-address{
     padding: 2rem;
-    width: 90%;
+    width: 100%;
 }
 
 #socials-footer{
     text-align: left;
-    border-top: none;
 }
 
 .socials-footer {
@@ -717,13 +724,11 @@ footer{
 
 #ui-ad{
     padding: 3rem 0;
-    margin: 1.5rem auto;
+    margin: 1.5rem 0;
     color: #3BA361;
-    font-family: "Archivo Medium";
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 0.6px;
     line-height: 20px;
-
 }
 
 #ui-ad a{
@@ -767,12 +772,15 @@ footer{
     /* HEADER */
     header{
         background: #142725;
+        
     }
 
     nav{
         display: flex;
         flex-direction: row;
-        padding: 0.05rem;
+        height: 188px;
+        margin: 0;
+        width: 100%;
         justify-content: space-evenly;
         align-items: center;
         border:1px solid #3BA361 ;
@@ -780,12 +788,14 @@ footer{
 
     .logo-div{
         width: 50%;
-        padding: 0 1rem;
+        padding: 1rem;
+        
         align-self: center;
     }
 
     .logo-div img{
-        width: 80%;
+        width: 75%;
+        margin:1rem 2rem;
     }
 
     .donation_header{
@@ -796,9 +806,8 @@ footer{
     }
     
     .donation-progress-div{
-        margin-left:3rem ;
-        width: 60%;
-        height: 20vh;
+        width: 68%;
+        height: 25.6vh;
         background-color: #ABD0B8;
         font-family: "Archivo Medium";
         font-size: 30px;
@@ -808,8 +817,8 @@ footer{
     }
 
     .progress-bar {
-        width: 70%;
-        height: 20vh;
+        width: var(--variable-width);
+        height: 25.6vh;
         background: #3BA361;
         position :relative;
         -webkit-animation: bar-move 5s normal ; /* Safari 4.0 - 8.0 */
@@ -819,50 +828,78 @@ footer{
     }
     
     .completed{
-        padding: 0.5rem;
+        padding: 1rem;
+        padding-top:3rem ;
     }
     
     .completed h3{
         color: #ABD0B8;
+        font-family: 'Archivo', sans-serif;
+        font-size: 40px;
+        letter-spacing: 1.33px;
+        line-height: 43px;
     }
     
     .uncompleted h3{
         color: #3BA361;
+        font-family: "Archivo Medium";
+        font-size: 40px;
+        letter-spacing: 1.33px;
+        line-height: 43px;
+    }
+
+    .completed p{
+        color: #142725;
+        font-family: "Archivo Medium";
+        font-size: 40px;
+        letter-spacing: 1.33px;
+        line-height: 43px;
+    }
+
+    .uncompleted p{
+        color: #142725;
+        font-family: "Archivo Medium";
+        font-size: 40px;
+        letter-spacing: 1.33px;
+        line-height: 43px;
     }
     
     .completed h3,
     .completed p{
-        text-align: right;
+        text-align: left;
     }
     
     .uncompleted{
       position: relative;
-      top: -90%;
-      right: 3%;
+      text-align: left;
+      margin-left: 77%;
+      margin-top: 5%;
     }
     
     .uncompleted h3,
     .uncompleted p{
-        text-align: right;
+        text-align: left;
     }
     
     .btn{
-        width: 38%;
+        width: 40%;
     }
     
     .donate-btn{
         display: block;
         background-color: #142725;
-        padding: 2rem 2rem 1rem 2rem;
+        padding: 2.4rem 2rem;
         color: #3BA361;
-        background-color: #142725;
-        font-size: 40px;
+        font-family: "Archivo Medium";
+        font-size: 45px;
         letter-spacing: 1.33px;
         line-height: 43px;
+        text-align: center;
         text-decoration: none;
         border:1px solid #3BA361;
         transition: 0.3s;
-        width: 40%;
+        width: 38%;
+        margin-right: -2.8px;
     }
 
     nav .donate-btn{
@@ -882,6 +919,12 @@ footer{
         letter-spacing: 2px;
         line-height: 75px;
     }
+
+    .type-txt{
+        display: block;
+        height: 20vh;
+    }
+
     
     .type-txt>.txt{
         border-right: 0.2rem solid #777;
@@ -894,21 +937,29 @@ footer{
     
     .socials-sidebar{
         position: fixed;
-        top: 230px;
+        top: 300px;
+        width: 98px;
         border: 1px solid #3BA361;
         border-left: none;
-        background-color: #142725;
-    }
-    
-    .socials-sidebar .social-link > img{
-        margin: 0.2rem 0;
     }
 
-    /* Food bank */
+    
+    .socials-sidebar .social-link > img{
+        margin: 1rem;
+        width:50%;
+    }
+
+    
     
 }
 
 @media(min-width:75rem){
+    /* Food bank */
+    .food-bank{
+        height: 200vh;
+        width: fit-content;
+    }
+
     .food-bank > div{
         display: block;
         flex-direction: row;
@@ -918,48 +969,54 @@ footer{
         display: block;
         position: relative;
         top: -70px;
-        left: 1%;
-        padding: 3rem 12rem 8rem 3rem;
+        left: -5.8%;
+        padding: 3rem;
         background-color: #ABD0B8;
-        height: 90vh;
-        width: 85%;
-        max-width: 670px;
+        height: 100vh;
+        width: 90%;
+        max-height: 733px;
+        max-width: 677px;
+    }
+
+    .floating-element .text-1{
+        max-width: 500px;
         color: #3BA361;
         font-family: "Abril Fatface";
-        font-size: 35px;
-        letter-spacing: 1.4px;
-        line-height: 50px;
+        font-size: 48px;
+        letter-spacing: 1.6px;
+        line-height: 65px;
     }
     
     #food-bank-img{
         position: relative;
-        bottom: 800px;
-        left: 55%;
-        width: 80%;
-        height: 70vh;
-        max-width: 515px;
+        bottom: 950px;
+        left: 48%;
+        width: 100%;
+        height: 100vh;
+        max-height: 834px;
+        max-width: 677px;
     }
     
     .food-bank .donate-btn{
         display: block;
         position: relative;
-        bottom: 720px;
-        left: -30px;
-        padding: 1rem 3rem;
-        width:fit-content;
+        bottom: 998px;
+        left: -100px;
+        padding: 3rem;
+        width:45%;
     }
     
     .text-2{
         position: relative;
-        bottom:350px ;
+        bottom:800px ;
         color: #3BA361;
         font-family: "Abril Fatface";
         font-size: 60px;
         letter-spacing: 2px;
         line-height: 60px;
         text-align: center;
-        width: 55%;
-        margin: auto;
+        width: 60%;
+        margin: 0 auto;
     }
 
 
@@ -973,10 +1030,12 @@ footer{
         align-items: center;
         padding: 0;
         width: 100%;
+        
     }
     
     .mini-gallery img{
         width:auto;
+        max-width: 514px;
     }
     
     #img-3{
@@ -1000,45 +1059,47 @@ footer{
     .help-section{
         display: flex;
         flex-direction: row;
-        height: 150vh;
+        height: 180vh;
         margin-top: -1.3rem;
         width: 100%;
+        
     }
 
     #help-text {
         align-self: flex-start;
-        width: 40%;
+        justify-self: center;
+        width: 35%;
         font-size: 60px;
         letter-spacing: 2px;
         line-height: 80px;
-        padding: 4rem;
-        margin: 1rem 2rem;
+        padding-top: 4rem;
+        margin-top: 10rem;
     }
 
     .help-section .floating-element{
         position: relative;
+        padding: 1rem 1.5rem 0.7rem 2rem;
         top: -250px;
-        right: -300px;
+        left: -60px;
         bottom: 0;
+        height: 100%;
+        max-height: 840px;
+        max-width: 752px;
+        border: 1px solid #979797;
         background-color: #fff;
-        
     }
 
-    .food-scope{
-        border: 1px solid #979797;
-        padding-bottom: 3rem;
-        position: relative;
-        left: -15px;
-    }
 
     .food-scope > p{
-        font-family: "Abril Fatface";
-        font-size: 40px;
         margin: 0.5rem 0;
         padding: 2rem 1.5rem 3rem 3rem;
-        width: 95%;
-        letter-spacing: 0.8px;
-        line-height: 56px;
+        width: 100%;
+        height: 65%;
+        color: #3BA361;
+        font-family: "Abril Fatface";
+        font-size: 60px;
+        letter-spacing: 2px;
+        line-height: 70px;
     }
 
     .food-scope span{
@@ -1048,62 +1109,69 @@ footer{
     .donations{
         display: flex;
         flex-direction: row;
-        position: relative;
-        top: 30px;
-        right: 500px;
-        width: 850px;
+        position: absolute;
+        width: 70%;
+        top: 3700px;
+        left: 200px;
+        max-width: 1200px;
     }
 
-    .donations .donation-progress-div{
-        width: 100% !important;
+    .food-scope-donation-progress{
         margin-left: 0;
         font-size: 20px;
         letter-spacing: 1px;
         line-height: 10px;
-        text-align: right;
         position: relative;
-        margin-left:3rem ;
         background-color: #ABD0B8;
         font-family: "Archivo Medium";
+        width: 100%;
+        height: 25vh;
+        max-height: 167px;
+        max-width: 990px;
+        vertical-align: baseline;
     }
 
-    .donations .progress-bar {
-        width: 70%;
+    .food-scope-donation-progress .progress-bar {
+        width: var(--variable-width);
+        max-height: 167px;
+        max-width: 700px;
         background: #3BA361;
         position :relative;
         -webkit-animation: bar-move 5s normal ; /* Safari 4.0 - 8.0 */
         animation: bar-move 5s normal;
         z-index: 2;
-        
     }
 
-    .donations .donation-progress-div .completed{
-        padding: 2rem;
+    .food-scope-donation-progress .completed{
+        padding: 1.2rem 2rem;
+        text-align: left;
     }
 
-    .donations .donation-progress-div .uncompleted{
+    .food-scope-donation-progress .uncompleted{
         position: relative;
-        top: -80%;
-        right: 3%;
+        text-align: left;
+        top: -110%;
+        left: -10px;
     }  
 
-    .donations .donation-progress-div h3{
-        margin-right: 1.5rem;
+    .food-scope-donation-progress h3{
+        text-align: left;
     }
 
 
-    .donations .donation-progress-div p{
-        font-size: 25px;
+    .food-scope-donation-progress p{
         position: relative;
         right: 20px;
-        padding: 0.5rem 0;
-        letter-spacing: 0.8px;
-        line-height: 26px;
+        padding:0.2rem 1rem;
+        font-family: "Archivo Medium";
+        font-size: 40px;
+        letter-spacing: 1.33px;
+        line-height: 43px;
     }
 
     .donations .donate-btn{
-        width: 85%;
-        padding: 2.3rem;
+        width: 60%;
+        padding: 3rem;
     }
 
 
@@ -1114,9 +1182,9 @@ footer{
 
     .prevention-tips{
         background-color: #fff;
-        width: 90%;
+        width: 100%;
+        
     }
-
     .flyer-details{
         display: flex;
         flex-direction: row;
@@ -1127,10 +1195,11 @@ footer{
         position: relative;
         display: block;
         top: -100px;
-        left: 70px;
+        left: 60px;
         background-color: #3BA361;
-        width: 45%;
-        height: 778px;
+        width: 50%;
+        max-height: 778px;
+        max-width: 677px;
         padding: 2rem;
     }
 
@@ -1143,10 +1212,8 @@ footer{
 
     .prevention-tips-text{
         position: relative;
-        margin: 2rem;
         padding: 2rem;
         padding-left:0 ;
-        left:100px ;
         width: 40%;
         justify-self: center;
         align-self: flex-start;
@@ -1166,49 +1233,55 @@ footer{
         font-size: 24px;
         letter-spacing: 0.8px;
         line-height: 37px;
-        margin: 3rem 0;
     }
 
     .download-flyer-btn{
         position: relative;
-        top: 130px;
-        right: 120px;
+        top: 90px;
+        right: 100px;
+        width: 80%;
         background-color: #142725;
         color: #3BA361;
-        padding: 2rem;
+        padding: 3rem 4rem;
+        font-family: "Archivo Medium";
+        font-size: 40px;
+        letter-spacing: 1.33px;
+        line-height: 43px;
+        text-align: center;
         text-decoration: none;
         transition: 0.5s !important;
         border: 1px solid #142725;
     }
 
-    .download-flyer-btn:hover{
-        background-color: #3BA361;
-        color: #142725;
-
-    }
+    
 
     .contact-div{
         display: flex;
         position: relative;
         bottom: -80px;
         flex-direction: row;
-        width: 75%;
+        width: 90%;
+        height: 100%;
         margin: 15rem auto 2rem auto;
         justify-content: space-evenly;
         align-content: center;
         background-color: #ABD0B8;
         color: #142725;
+        font-family: 'Archivo', sans-serif;
+        max-height: 600px;
+        max-width: 1678px;
     }
 
     .paypal{
-        padding: 2rem 2rem;
+        padding: 3rem;
         width: 50%;
     }
 
     .paypal h4{
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
+        margin-top: -2.5rem;
         color: #3BA35D;
-        font-family: "Archivo Medium";
+        font-family: 'Archivo', sans-serif;
         font-size: 40px;
         letter-spacing: 1.33px;
         line-height: 43px;
@@ -1219,21 +1292,20 @@ footer{
     .click-to-donate-btn{
         background-color: #142725;
         padding: 2rem;
-        font-family: "Archivo Medium";
-        font-size: 25px;
-        text-decoration: none;
-        font-weight: 900;
-        width: auto;
+        font-size: 40px;
+        letter-spacing: 1.33px;
+        line-height: 43px;
+        width: fit-content;
     }
 
     .click-to-donate-btn:hover{
         color: #142725;
         background-color:  #3BA361;
-    
     }
 
     .click-to-donate-btn svg{
-        width: 15%;
+        width: 18%;
+        display: inline-block;
         vertical-align: middle;
     }
 
@@ -1254,7 +1326,7 @@ footer{
     }
 
     .contact-div-btn:hover{
-        transform: scale(1.1);
+        transform: scale(1.03);
         transition: 0.3s;
     }
 
@@ -1266,14 +1338,15 @@ footer{
     }
 
     .bacs-payment{
+        border: none;
         border-left: 1px solid #3BA361;
-        padding: 2rem;
-        width: 38%;
+        padding: 3rem 6rem;
+        width: 50%;
     }
 
     .bacs-payment-title{
         color: #3BA35D;
-        font-family: "Archivo Medium";
+        font-family: 'Archivo', sans-serif;
         font-size: 40px;
         letter-spacing: 1.33px;
         line-height: 43px;
@@ -1283,26 +1356,26 @@ footer{
     .bacs-payment-body-1,
     .bacs-payment-body-2{
         list-style: none;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
         color: #142725;
-        font-family: "Archivo Medium";
-        font-size: 30px;
-        letter-spacing: 1px;
-        line-height: 20px;
+        font-family: 'Archivo', sans-serif;
+        font-size: 36px;
+        letter-spacing: 1.2px;
+        line-height: 40px;
     }
 
     .bacs-payment-body-1 li{
-        margin: 0.7rem 0;
+        margin: 0.2rem 0;
         padding: 0.1rem;
         text-align: left;
     }
 
     .bacs-payment-body-2{
-        margin-top: 2.3rem;
+        margin-top: 2rem;
     }
 
     .bacs-payment-body-2 li{
-        margin: 0.7rem 0;
+        margin: 0.2rem 0;
         padding: 0.1rem;
         text-align: left;
     }
@@ -1322,14 +1395,17 @@ footer{
         justify-self: center;
         text-align: center;
     }
+    .stay-safe img{
+        width: 30%;
+    }
 
     .stay-safe h3{
         font-family: "Abril Fatface";
         color: #3BA361;
         font-size: 60px;
-        letter-spacing: 1.5px;
+        letter-spacing: 2px;
         line-height: 80px;
-        width: 38%;
+        width: 100%;
         margin: auto;
         text-align: center;
     }
@@ -1338,47 +1414,35 @@ footer{
         display: grid;
         text-align: center;
         grid-template-columns: 1fr 1fr;
+        font-family: 'Archivo', sans-serif;
         padding: 2rem 0 0 0;
         list-style: none;
         margin-top: 4rem;
     }
 
     .footer-item{
-        padding: 5rem;
+        padding: 4rem;
         width: 100%;
-        border: 1px solid #3BA361;
-    }
-
-    #logo-footer,
-    #contact-footer{
-        border-right: none;
-    }
-
-    #address-footer,
-    #socials-footer{
-        border-bottom: none;
-        border-left: none;
+        border: 1px solid #3BA361 !important;
     }
 
     #logo-footer {
         margin: auto;
-        border-left: none;
+        padding: 4.2rem;
     }
 
     #logo-footer p{
         color: #FFFFFF;
-        font-family: "Archivo Medium";
         font-size: 24px;
         letter-spacing: 0.8px;
         line-height: 35px;
-        width: 60%;
         margin: 1.5rem auto;
         text-align: left;
+        width: 50%;
     }
 
     #contact-footer h3{
         color: #3BA361;
-        font-family: "Archivo Medium";
         font-size: 40px;
         letter-spacing: 1.33px;
         line-height: 43px;
@@ -1389,7 +1453,6 @@ footer{
         list-style: none;
         margin: 2rem 0;
         color: #FFFFFF;
-        font-family: "Archivo Medium";
         font-size: 40px;
         letter-spacing: 1.33px;
         line-height: 43px;
@@ -1407,26 +1470,20 @@ footer{
         flex-wrap: wrap;
         align-content: center ;
         justify-content: center;
-        border-bottom: none;
-        border-top: none;
         padding: 0;
+        font-family: "Archivo";
+        font-size: 16px;
+        letter-spacing: 0.6px;
+        line-height: 25px;
     }
 
     #address-footer h5{
         color: #3BA361;
-        font-family: "Archivo Medium";
-        font-size: 16px;
-        letter-spacing: 1.33px;
-        line-height: 43px;
         text-align: left;
     }
 
     #address-footer p{
         color: #fff;
-        font-family: "Archivo Medium";
-        font-size: 16px;
-        letter-spacing: 1.3px;
-        line-height: 30px;
         text-align: left;
         width: 90%;
     }
@@ -1434,16 +1491,15 @@ footer{
     #rc-number,
     #reg-address{
         padding: 1rem;
-        width: 30%;
+        width: 35%;
     }
 
     #socials-footer{
         text-align: left;
-        border-top: none;
     }
 
     .socials-footer {
-        padding: 2rem;
+        padding: 2rem 0;
         margin: 2rem 0;
     }
 
@@ -1451,7 +1507,9 @@ footer{
         display: inline-block;
         margin: 0 0.5rem;
     }
-
+    .socials-footer .social-link > img{
+        width:120%;
+    }
     #scroll-up-btn{
         display: none;
         position: fixed;
@@ -1470,7 +1528,7 @@ footer{
 
 
 @keyframes bar-move {
-    0%   {width: 10%;}
+    0%   {width: 0%;}
     50%  {width: 100%;}
-    100% {width: 70%;}
+    100% {width: var(--variable-width);}
 }

@@ -57,3 +57,48 @@ window.addEventListener('scroll', () =>{
   }
 })
 
+
+// Progress bar
+
+const client = contentful.createClient({
+  // This is the space ID. A space is like a project folder in Contentful terms
+  space: "sg8u0cuepl61",
+  // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
+  accessToken: "qxS4VS_1bNgqXc8LOyNLQwNpipTcGNlpWRRFXXhQ0Ls"
+});
+
+
+let currentAmount,goal,percentage;
+
+client.getEntries({
+  content_type: "jayTeeFoundation" 
+})
+.then(response => {
+  // document.querySelector('body').style.display = 'block';
+    const values = response.items;
+    currentAmount = values[0].fields.amountDonated;
+    const currentAmountInNaira = (currentAmount)*420.06;
+    goal = values[0].fields.donationGoal;
+    const goalInNaira = goal*420.06;
+    percentage = (currentAmount/goal)*100;
+    document.querySelectorAll('.amount-in-naira').forEach((val) =>{
+        val.innerHTML = `₦${currentAmountInNaira}`;
+    })
+    document.querySelectorAll('.amount-in-euro').forEach((val) =>{
+        val.innerHTML = `£${currentAmount}`;
+    })
+    document.querySelectorAll('.goal-in-naira').forEach((val) =>{
+        val.innerHTML = `₦${goalInNaira}`;
+    })
+    document.querySelectorAll('.goal-in-euro').forEach((val) =>{
+        val.innerHTML = `£${goal}`;
+    })
+    
+    document.querySelectorAll('.progress-bar').forEach( (progress) => {
+      progress.style.setProperty('--variable-width', `${percentage}%`)
+    })
+    
+ 
+})
+
+.catch(console.error)

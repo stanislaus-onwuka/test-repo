@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>JayTeeOjo Foundation</title>
 </head>
@@ -19,14 +20,14 @@
                     <div class="progress-bar">
                         <div class="completed">
                             <h3>Recieved</h3>
-                            <p>£400</p>
-                            <p>N15,000 </p>
+                            <p class="amount-in-euro"></p>
+                            <p class="amount-in-naira"></p>
                         </div>
                     </div>
                     <div class="uncompleted">
                         <h3>Goal</h3>
-                        <p>£1,100</p>
-                        <p>N500,000</p>
+                        <p class="goal-in-euro"></p>
+                        <p class="goal-in-naira"></p>
                     </div>
                 </div>
                 <a href="https://www.paypal.me/jayteeojo" class="btn donate-btn" target="_blank">
@@ -38,7 +39,7 @@
                             <g id="Desktop-HD" transform="translate(-936.000000, -3582.000000)">
                                 <g id="Group-2" transform="translate(938.000000, 3582.000000)">
                                     <path class="Line" d="M43.0909014,38.0327838 L67,50.2128906 L42.9104553,62.0321054 L42.985,52.032 L0.484962831,51.7128341 L-1.51498064,51.6977969 L-1.4849063,47.69791 L0.515037169,47.7129472 L43.015,48.032 L43.0909014,38.0327838 Z" fill-rule="nonzero"></path>
-                                    <line class="top-line" x1="0.5" y1="47.8128906" x2="0.5" y2="0" id="Path-2" stroke="#3BA361" stroke-width="4"></line>
+                                    <line class="top-line" x1="0.5" y1="48.9128906" x2="0.5" y2="1" id="Path-2" stroke="#3BA361" stroke-width="4.6"></line>
                                 </g>
                             </g>
                         </g>
@@ -53,13 +54,13 @@
                 data-wait="1000" 
                 data-words='["There are a group of people at the biggest risk at a time like this, "]'>
                 </span>
-                old people in the villages 
+                <br/>old people in the villages 
             </p>
         </div>
         <ul class="socials socials-sidebar">
             <li>
                 <a href="https://web.facebook.com/jayteeojo" class="social-link">
-                    <img src="./images/icons/facebook.png">
+                    <img src="./images/icons/svg/facebook.svg">
                 </a>
             </li>
             <li>
@@ -74,21 +75,21 @@
             </li>
             <li>
                 <a href="https://www.instagram.com/jayteeojo/" class="social-link">
-                    <img src="./images/icons/instagram.png">
+                    <img src="./images/icons/svg/instagram.svg">
                 </a>
             </li>
         </ul>
     </header>
     <section class="food-bank">
         <div>
-            <div class="floating-element" data-aos="fade-right">
+            <div class="floating-element" data-aos="fade-right" data-aos-duration="1500">
                 <p class="text-1">
                     Many have to keep indoors sometimes without food givenmost people earn a daily living which 
                     has been disrupted.
                 </p>
             </div>
             
-            <img  src="./images/gallery-images/annie-spratt-bMk-P7ja0Q4-unsplash.png" id="food-bank-img" alt="A Woman" data-aos="fade-left">
+            <img  src="https://res.cloudinary.com/ecx/image/upload/e_auto_color/v1586974468/JayTee/gallery-images/annie-spratt-bMk-P7ja0Q4-unsplash_ii4ht4.png" id="food-bank-img" alt="A Woman" data-aos="fade-left" data-aos-duration="1500">
             
             <a href="https://www.paypal.me/jayteeojo" class="btn donate-btn" data-aos="fade-down"  data-aos-duration="1200" target="_blank">
                 <span>
@@ -100,7 +101,7 @@
                             <g id="Desktop-HD" transform="translate(-936.000000, -3582.000000)">
                                 <g id="Group-2" transform="translate(938.000000, 3582.000000)">
                                     <path class="Line" d="M43.0909014,38.0327838 L67,50.2128906 L42.9104553,62.0321054 L42.985,52.032 L0.484962831,51.7128341 L-1.51498064,51.6977969 L-1.4849063,47.69791 L0.515037169,47.7129472 L43.015,48.032 L43.0909014,38.0327838 Z" fill-rule="nonzero"></path>
-                                    <line class="top-line" x1="0.5" y1="47.8128906" x2="0.5" y2="0" id="Path-2" stroke="#3BA361" stroke-width="4"></line>
+                                    <line class="top-line" x1="0.5" y1="47.8128906" x2="0.5" y2="0" id="Path-2" stroke="#3BA361" stroke-width="4.6"></line>
                                 </g>
                             </g>
                         </g>
@@ -110,66 +111,66 @@
             </a>
         
         </div>
-        <p class="text-2" data-aos="fade-in">
+        <p class="text-2" data-aos="fade-in" data-aos-duration="1500">
             We have planned a fixed small scope intervention in the form of a Food Bank that will run through 
             the second week of Ekiti Lockdown. 
         </p>
     </section>
     <section class="mini-gallery">
-        <img src="./images/gallery-images/annie-spratt-jmECplToD0c-unsplash.png" alt="People" id="img-1" data-aos="zoom-in">
-        <img src="./images/gallery-images/fred-kearney-o-ioeoATbIM-unsplash (1).png" alt="People" id="img-5" data-aos="zoom-in">
-        <img src="./images/gallery-images/annie-spratt-SPS796v4KmM-unsplash (1).png" alt="People" id="img-3" data-aos="zoom-in">
-        <img src="./images/gallery-images/annie-spratt-KD26FvIFqVc-unsplash.png" alt="People" id="img-4" data-aos="zoom-in">
-        <img src="./images/gallery-images/annie-spratt-Sn04BHfa2AY-unsplash (1).png" alt="People" id="img-2" data-aos="zoom-in"> 
+        <img src="https://res.cloudinary.com/ecx/image/upload/e_auto_color/v1586974465/JayTee/gallery-images/annie-spratt-jmECplToD0c-unsplash_uvpy1q.png" alt="People" id="img-1" data-aos="zoom-in">
+        <img src="https://res.cloudinary.com/ecx/image/upload/e_auto_color/v1586974466/JayTee/gallery-images/fred-kearney-o-ioeoATbIM-unsplash_1_tme5ly.png" alt="People" id="img-5" data-aos="zoom-in">
+        <img src="https://res.cloudinary.com/ecx/image/upload/e_auto_color/v1586974466/JayTee/gallery-images/annie-spratt-SPS796v4KmM-unsplash_1_v5mxfx.png" alt="People" id="img-3" data-aos="zoom-in">
+        <img src="https://res.cloudinary.com/ecx/image/upload/e_auto_color/v1586974467/JayTee/gallery-images/annie-spratt-KD26FvIFqVc-unsplash_ure5kg.png" alt="People" id="img-4" data-aos="zoom-in">
+        <img src="https://res.cloudinary.com/ecx/image/upload/e_auto_color/v1586974466/JayTee/gallery-images/annie-spratt-Sn04BHfa2AY-unsplash_1_bfq4jh.png" alt="People" id="img-2" data-aos="zoom-in"> 
     </section>
     <section class="help-section">
-        <p id="help-text" data-aos="zoom-in-down">
+        <p id="help-text" data-aos="zoom-in-down" data-aos-duration="1400">
             Please can you help?
         </p>
-        <div class="floating-element food-scope" data-aos="fade-left" data-aos-duration="1200">
+        <div class="floating-element food-scope" data-aos="fade-left" data-aos-duration="1350">
             <p>We are looking to raise <span>£1,100/N500,000</span> for a food scope limited to 1000kg of Rice. </p>
-            <div class="donations" data-aos="fade-down" data-aos-duration="1200">
-               <div class="donation-progress-div">
-                    <div class="progress-bar">
-                        <div class="completed">
-                            <h3>Recieved</h3>
-                            <p>£500</p>
-                            <p>N500,000 </p>
-                        </div>
-                    </div>
-                    <div class="uncompleted">
-                        <h3>Goal</h3>
-                        <p>£1,100</p>
-                        <p>N500,000</p>
-                    </div>
-                </div>
-                <a href="https://www.paypal.me/jayteeojo" class="btn donate-btn" target="_blank">
-                    <span>
-                        <svg class="link" width="69px" height="62px" viewBox="0 0 69 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
-                            <title>Group 2</title>
-                            <desc>Created with Sketch.</desc>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="Desktop-HD" transform="translate(-936.000000, -3582.000000)">
-                                    <g id="Group-2" transform="translate(938.000000, 3582.000000)">
-                                        <path class="Line" d="M43.0909014,38.0327838 L67,50.2128906 L42.9104553,62.0321054 L42.985,52.032 L0.484962831,51.7128341 L-1.51498064,51.6977969 L-1.4849063,47.69791 L0.515037169,47.7129472 L43.015,48.032 L43.0909014,38.0327838 Z" fill-rule="nonzero"></path>
-                                        <line class="top-line" x1="0.5" y1="47.8128906" x2="0.5" y2="0" id="Path-2" stroke="#3BA361" stroke-width="4"></line>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                    </span>
-                    Donate
-                </a>
-            </div>
         </div>
+        <div class="donations" data-aos="fade-down" data-aos-duration="1300">
+            <div class="food-scope-donation-progress">
+                 <div class="progress-bar">
+                     <div class="completed">
+                         <h3>Recieved</h3>
+                         <p class="amount-in-euro"></p>
+                         <p class="amount-in-naira"></p>
+                     </div>
+                 </div>
+                 <div class="uncompleted">
+                     <h3>Goal</h3>
+                     <p class="goal-in-euro"></p>
+                     <p class="goal-in-naira"></p>
+                 </div>
+             </div>
+             <a href="https://www.paypal.me/jayteeojo" class="btn donate-btn" target="_blank">
+                 <span>
+                     <svg class="link" width="69px" height="62px" viewBox="0 0 69 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                         <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+                         <title>Group 2</title>
+                         <desc>Created with Sketch.</desc>
+                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                             <g id="Desktop-HD" transform="translate(-936.000000, -3582.000000)">
+                                 <g id="Group-2" transform="translate(938.000000, 3582.000000)">
+                                     <path class="Line" d="M43.0909014,38.0327838 L67,50.2128906 L42.9104553,62.0321054 L42.985,52.032 L0.484962831,51.7128341 L-1.51498064,51.6977969 L-1.4849063,47.69791 L0.515037169,47.7129472 L43.015,48.032 L43.0909014,38.0327838 Z" fill-rule="nonzero"></path>
+                                     <line class="top-line" x1="0.5" y1="47.8128906" x2="0.5" y2="0" id="Path-2" stroke="#3BA361" stroke-width="4.6"></line>
+                                 </g>
+                             </g>
+                         </g>
+                     </svg>
+                 </span>
+                 Donate
+             </a>
+         </div>
     </section>
     <section class="prevention-tips">
         <div class="flyer-details" >
-            <div class="flyer" data-aos="fade-right" data-aos-duration="1100">
-                <img src="./images/JayTeeOjo Foundation COVID-19 Flyer.jpg" alt="COVID-19 Flyer">
+            <div class="flyer" data-aos="fade-right" data-aos-duration="1400">
+                <img src="https://res.cloudinary.com/ecx/image/upload/e_auto_color,q_auto:eco/e_colorize:25,co_rgb:3BA361/v1586996332/JayTee/gallery-images/JayTeeOjo_Foundation_COVID-19_Flyer_knnboq.jpg" alt="COVID-19 Flyer">
             </div>
-            <div class="prevention-tips-text" data-aos="fade-left">
+            <div class="prevention-tips-text" data-aos="fade-left" data-aos-duration="1300">
                 <h3 data-aos="fade-down">Covid-19 prevention tips</h3>
                 <p data-aos="fade-down">We have created a guide to help you keep safe during the pandemic. 
                     Please make sure you stay home and let’s combat this pandemic together.
@@ -218,16 +219,17 @@
                 </ul>
             </div>
         </div>
-        <div class="instagram-feed"></div>
     </section>
     <footer>
         <div class="stay-safe">
             <div class="heart">
-                <img src="./images/icons/love heart.png" data-aos="fade-up"
+                <img src="./images/icons/svg/love heart.svg" data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
             </div>
             <h3>
-                Stay safe and Stay home
+                Stay safe<br>
+                and <br>
+                Stay home
             </h3>
         </div>
         <div class="footer-list">
@@ -259,7 +261,7 @@
                 <ul class="socials socials-footer">
                     <li>
                         <a href="https://web.facebook.com/jayteeojo" class="social-link">
-                            <img src="./images/icons/facebook.png">
+                            <img src="./images/icons/svg/facebook.svg">
                         </a>
                     </li>
                     <li>
@@ -274,7 +276,7 @@
                     </li>
                     <li>
                         <a href="https://www.instagram.com/jayteeojo/" class="social-link">
-                            <img src="./images/icons/instagram.png">
+                            <img src="./images/icons/svg/instagram.svg">
                         </a>
                     </li>
                 </ul>
@@ -284,12 +286,13 @@
             </div>
         </div>
         <a href="#header" id="scroll-up-btn">
-            <img src="./images/icons/down arrow.png">
+            <img src="./images/icons/svg/down arrow.svg">
         </a>
     </footer>
     
     <script src="/scripts/app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script>
         AOS.init();
     </script>
