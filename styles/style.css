@@ -1038,7 +1038,7 @@ footer{
 
     .mini-gallery{
         display: grid;
-        grid-template-columns: 38% 33% 33%;
+        grid-template-columns: 37% 35% 28%;
         justify-items: stretch;
         align-items: center;
         padding: 0;
@@ -1124,9 +1124,9 @@ footer{
         flex-direction: row;
         position: absolute;
         width: 70%;
-        bottom: -492%;
+        bottom: -498.5%;
         height: 25vh;
-        left: 200px;
+        left: 170px;
         max-width: 1000px;
         z-index: 2;
     }
