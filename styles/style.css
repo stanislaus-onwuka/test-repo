@@ -811,11 +811,12 @@ footer{
         flex-direction: row;
         width: 100%;
         padding: 0;
+        height:28.5vh ;
     }
     
     .donation-progress-div{
         width: 68%;
-        height: 25.6vh;
+        height: 100%;
         background-color: #ABD0B8;
         font-family: "Archivo Medium";
         font-size: 30px;
@@ -826,7 +827,7 @@ footer{
 
     .progress-bar {
         width: var(--variable-width);
-        height: 25.6vh;
+        height: 100%;
         background: #3BA361;
         position :relative;
         -webkit-animation: bar-move 5s normal ; /* Safari 4.0 - 8.0 */
@@ -880,7 +881,7 @@ footer{
     .uncompleted{
       position: relative;
       text-align: left;
-      margin-left: 77%;
+      margin-left: 75%;
       margin-top: 2%;
     }
     
@@ -908,6 +909,7 @@ footer{
         transition: 0.3s;
         width: 38%;
         margin-right: -2.8px;
+        height: 100%;
     }
 
     nav .donate-btn{
@@ -1000,7 +1002,7 @@ footer{
     
     #food-bank-img{
         position: relative;
-        bottom: 900px;
+        bottom: 800px;
         left: 48%;
         width: 100%;
         height: 100vh;
@@ -1122,7 +1124,8 @@ footer{
         flex-direction: row;
         position: absolute;
         width: 70%;
-        bottom: -465%;
+        bottom: -500%;
+        height: 26vh;
         left: 200px;
         max-width: 1000px;
         z-index: 2;
@@ -1138,7 +1141,7 @@ footer{
         background-color: #ABD0B8;
         font-family: "Archivo Medium";
         width: 100%;
-        height: 25vh;
+        height: 100%;
         max-height: 167px;
         max-width: 990px;
         vertical-align: baseline;
@@ -1146,6 +1149,7 @@ footer{
 
     .food-scope-donation-progress .progress-bar {
         width: var(--variable-width);
+        height: 100%;
         max-height: 167px;
         max-width: 700px;
         background: #3BA361;
@@ -1163,7 +1167,7 @@ footer{
     .food-scope-donation-progress .uncompleted{
         position: relative;
         text-align: left;
-        top: -110%;
+        top: -100%;
         left: -10px;
     }  
 
