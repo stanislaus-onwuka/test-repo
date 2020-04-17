@@ -978,7 +978,7 @@ footer{
     .floating-element{
         display: block;
         position: relative;
-        top: -110px;
+        top: -85px;
         left: -2.8%;
         padding: 3rem;
         margin: 1rem;
@@ -1000,7 +1000,7 @@ footer{
     
     #food-bank-img{
         position: relative;
-        bottom: 950px;
+        bottom: 900px;
         left: 48%;
         width: 100%;
         height: 100vh;
@@ -1122,9 +1122,10 @@ footer{
         flex-direction: row;
         position: absolute;
         width: 70%;
-        top: 4000px;
+        bottom: -465%;
         left: 200px;
         max-width: 1000px;
+        z-index: 2;
     }
 
     .food-scope-donation-progress{
@@ -1227,7 +1228,6 @@ footer{
     .prevention-tips-text{
         position: relative;
         padding: 2rem;
-        /* margin: 0.5rem; */
         padding-left:0 ;
         width: 35%;
         justify-self: center;
@@ -1252,7 +1252,6 @@ footer{
 
     .download-flyer-btn{
         position: relative;
-        top: 90px;
         right: 100px;
         width: 80%;
         background-color: #142725;
