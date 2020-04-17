@@ -23,6 +23,7 @@ html{
 /* Header */
 header{
     background: #142725;
+    width: 100%;
     height: 80%;
 }
 
@@ -208,15 +209,13 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    width: 80%;
+    align-content: center; 
     margin: auto;
 }
 
 .floating-element{
     display: block;
-    padding: 2rem ;
-    margin: 1rem;
+    padding: 1.5rem ;
     background-color: #ABD0B8;
     width: 100%;
     max-width: 670px;
@@ -231,12 +230,12 @@ nav{
 #food-bank-img{
     width: 100%;
     max-width: 615px;
-    margin: 1rem;
 }
 
 .food-bank .donate-btn{
     display: block;
     margin: 1rem;
+    width: 90%;
     padding: 1.5rem;
 }
 
@@ -336,58 +335,69 @@ nav{
 
 .donations{
     display: flex;
-    flex-direction: column;
-    width: auto;
+    flex-direction: row;
+    width:100%;
+    margin: 0 1rem;
+    min-width: 500px;
 }
 
 .food-scope-donation-progress{
-    width: 100% !important;
-    margin-left: 0;
+    display: none;
+    /* margin-left: 0;
     font-size: 20px;
     letter-spacing: 1px;
     line-height: 10px;
     text-align: right;
-    position: relative;
-    background: #00800052;
+    background-color: #3BA361;
     margin: 2rem 0;
+    width:100%;
+    margin: 1rem;
+    min-width: 500px; */
 }
 
 
 .food-scope-donation-progress p{
     font-size: 25px;
-    position: relative;
-    right: 20px;
     color: #000;
     padding: 0.5rem 0;
     letter-spacing: 0.8px;
     line-height: 26px;
+    font-family: "Archivo Medium";
 }
 
 
 .food-scope-donation-progress .progress-bar{
     width: var(--variable-width);
+    background: #00800052;
+    min-width: 500px;
+    animation: bar-move 5s normal;
 }
 
 .food-scope-donation-progress .completed{
     padding-top: 1rem;
+    width: 80%;
+    text-align: left;
 }
 
 .food-scope-donation-progress .uncompleted{
-    position: relative;
-    left: 68%;
-    top: -90px;
     width: fit-content;
+    position: relative;
+    text-align: left;
+    top: -55%;
+    left: 67%;
 }
 
 .food-scope-donation-progress h3{
+    text-align: left;
     margin-right: 1rem;
 }
 
 
 .donations .donate-btn{
-    width: 80%;
-    margin: auto;
-    padding: 2rem;
+    display: block;
+    width: 70%;
+    margin: 1rem auto;
+    padding:1rem 2rem;
 }
 
 
@@ -399,7 +409,6 @@ nav{
 
 
 .prevention-tips{
-    
     background-color: #fff;
     padding: 0 0 1rem 0;
 }
@@ -632,7 +641,6 @@ footer{
 }
 
 .footer-item{
-    padding: 4.5rem;
     width: 100%;
     border: 1px solid #3BA361;
 }
@@ -643,7 +651,7 @@ footer{
     font-size: 22px;
     letter-spacing: 0.8px;
     line-height: 35px;
-    width: 100%;
+    width: 70%;
     margin: 1.5rem auto;
     text-align: left;
 }
@@ -709,7 +717,8 @@ footer{
 }
 
 #socials-footer{
-    text-align: left;
+    text-align:center;
+    padding: 2rem;
 }
 
 .socials-footer {
@@ -772,7 +781,7 @@ footer{
     /* HEADER */
     header{
         background: #142725;
-        
+        height: 130vh;
     }
 
     nav{
@@ -789,7 +798,6 @@ footer{
     .logo-div{
         width: 50%;
         padding: 1rem;
-        
         align-self: center;
     }
 
@@ -958,19 +966,22 @@ footer{
     .food-bank{
         height: 200vh;
         width: fit-content;
+        
     }
 
     .food-bank > div{
         display: block;
         flex-direction: row;
+        width: 80%;
     }
 
     .floating-element{
         display: block;
         position: relative;
-        top: -70px;
+        top: -110px;
         left: -5.8%;
         padding: 3rem;
+        margin: 1rem;
         background-color: #ABD0B8;
         height: 100vh;
         width: 90%;
@@ -980,6 +991,7 @@ footer{
 
     .floating-element .text-1{
         max-width: 500px;
+       
         color: #3BA361;
         font-family: "Abril Fatface";
         font-size: 48px;
@@ -1117,7 +1129,7 @@ footer{
     }
 
     .food-scope-donation-progress{
-        margin-left: 0;
+        margin: 0;
         font-size: 20px;
         letter-spacing: 1px;
         line-height: 10px;
