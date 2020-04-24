@@ -1,5 +1,5 @@
  /* Predefined fonts and link */
- @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Abril+Fatface:wght@400&display=swap');
  @import url('https://fonts.googleapis.com/css?family=Archivo&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
 
@@ -16,9 +16,6 @@ html{
     scroll-behavior: smooth;
 }
 
-/* body{
-    display: none;
-} */
 
 /* Header */
 header{
@@ -34,6 +31,8 @@ nav{
     padding: 0.2rem;
     align-items: stretch;
     border:1px solid #3BA361 ;
+    border-left: none;
+    border-right: none;
 }
 
 .logo-div{
@@ -93,7 +92,7 @@ nav{
 
 .uncompleted{
   position: relative;
-  top: -90%;
+  top: -93%;
   right: 3%;
 }
 
@@ -106,6 +105,7 @@ nav{
 
 .btn{
     width: 100%;
+    white-space: nowrap;
     font-family: "Archivo Medium";
     font-size: 40px;
     letter-spacing: 1.33px;
@@ -444,6 +444,7 @@ nav{
 .prevention-tips-text h3{
     color: #3BA361;
     font-family: "Abril Fatface";
+    font-weight: 400;
     font-size: 50px;
     letter-spacing: 2px;
     line-height: 60px;
@@ -472,6 +473,7 @@ nav{
 .download-flyer-btn:hover{
     background-color: #3BA361;
     color: #142725;
+    border: 1px solid #3BA361;
 }
 
 .contact-div{
@@ -626,6 +628,7 @@ footer{
     font-size: 60px;
     letter-spacing: 1.5px;
     line-height: 80px;
+    font-weight: 400;
     width: 90%;
     margin: auto;
     text-align: center;
@@ -750,7 +753,7 @@ footer{
     position: fixed;
     bottom: 50px;
     right: 75px;
-    background-color: #142725;
+    background-color: rgba(255, 255, 255, 0.192);
     border-radius: 100px;
     border: 1px solid #3BA361;
     height: 70px;
@@ -793,6 +796,8 @@ footer{
         justify-content: space-evenly;
         align-items: center;
         border:1px solid #3BA361 ;
+        border-left: none;
+        border-right: none;
     }
 
     .logo-div{
@@ -875,7 +880,7 @@ footer{
     
     .completed h3,
     .completed p{
-        text-align: left;
+        text-align: right;
     }
     
     .uncompleted{
@@ -966,7 +971,7 @@ footer{
 @media(min-width:75rem){
     /* Food bank */
     .food-bank{
-        height: 240vh;
+        height: 220vh;
         width: fit-content;
         
     }
@@ -1021,15 +1026,15 @@ footer{
     
     .text-2{
         position: relative;
-        bottom:620px ;
+        bottom:700px ;
         color: #3BA361;
         font-family: "Abril Fatface";
         font-size: 60px;
-        letter-spacing: 2px;
-        line-height: 60px;
+        letter-spacing: 2.5px;
+        line-height: 70px;
         text-align: center;
-        width: 60%;
-        margin: 3rem auto;
+        width: 70%;
+        margin: 0 auto;
     }
 
 
@@ -1038,7 +1043,7 @@ footer{
 
     .mini-gallery{
         display: grid;
-        grid-template-columns: 37% 35% 28%;
+        grid-template-columns: 34% 34% 28%;
         justify-items: stretch;
         align-items: center;
         padding: 0;
@@ -1086,7 +1091,7 @@ footer{
         letter-spacing: 2px;
         line-height: 80px;
         padding-top: 4rem;
-        margin-top: 10rem;
+        margin-top: 16rem;
     }
 
     .help-section .floating-element{
@@ -1098,16 +1103,16 @@ footer{
         height: 100%;
         max-height: 840px;
         max-width: 752px;
-        border: 1px solid #979797;
+        border: 1px solid #fff;
         background-color: #fff;
     }
 
 
     .food-scope > p{
         margin: 0.5rem 0;
-        padding: 2rem 1.5rem 3rem 3rem;
+        padding: 2rem 1.5rem 2rem 3rem;
         width: 100%;
-        height: 65%;
+        height: auto;
         color: #3BA361;
         font-family: "Abril Fatface";
         font-size: 60px;
@@ -1124,9 +1129,9 @@ footer{
         flex-direction: row;
         position: absolute;
         width: 70%;
-        bottom: -498.5%;
-        height: 25vh;
-        left: 170px;
+        bottom: 10px;
+        height: 23vh;
+        left: -50%;
         max-width: 1000px;
         z-index: 2;
     }
@@ -1161,7 +1166,7 @@ footer{
 
     .food-scope-donation-progress .completed{
         padding: 1.2rem 2rem;
-        text-align: left;
+        text-align: right;
     }
 
     .food-scope-donation-progress .uncompleted{
@@ -1172,7 +1177,7 @@ footer{
     }  
 
     .food-scope-donation-progress h3{
-        text-align: left;
+        text-align: right;
     }
 
 
@@ -1187,8 +1192,8 @@ footer{
     }
 
     .donations .donate-btn{
-        width: 60%;
-        padding: 3rem;
+        width: 70%;
+        padding: 2rem 3rem;
         margin: 0;
     }
 
@@ -1271,6 +1276,16 @@ footer{
         border: 1px solid #142725;
     }
 
+    .appreciation-images{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        padding: 3rem 0;
+    }
+
+    .appreciation-images img{
+        width: 100%;
+    }
+
     
 
     .contact-div{
@@ -1280,7 +1295,7 @@ footer{
         flex-direction: row;
         width: 84%;
         height: 100%;
-        margin: 15rem auto 2rem auto;
+        margin: 2rem auto 2rem auto;
         justify-content: space-evenly;
         align-content: center;
         background-color: #ABD0B8;
@@ -1533,7 +1548,7 @@ footer{
         position: fixed;
         bottom: 50px;
         right: 100px;
-        background-color: #142725;
+        background-color: rgba(255, 255, 255, 0.192);
         border-radius: 100px;
         border: 1px solid #3BA361;
         height: 70px;

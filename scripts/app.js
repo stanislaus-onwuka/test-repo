@@ -79,7 +79,7 @@ client.getEntries({
     currentAmount = values[0].fields.amountDonated;
     const currentAmountInNaira = (currentAmount)*420.06;
     goal = values[0].fields.donationGoal;
-    const goalInNaira = goal*420.06;
+    const goalInNaira = goal*450;
     percentage = (currentAmount/goal)*100;
     document.querySelectorAll('.amount-in-naira').forEach((val) =>{
         val.innerHTML = `₦${currentAmountInNaira}`;
