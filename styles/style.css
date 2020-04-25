@@ -181,7 +181,8 @@ nav{
     position: fixed;
     top: 230px;
     z-index: 10;
-    border: 1px solid #3BA361;
+    border: 1px solid rgb(68, 95, 78);
+    background-color: rgba(255, 255, 255, 0.082);
     border-left: none;
 }
 
@@ -271,6 +272,7 @@ nav{
 
 .mini-gallery img{
     width: 100%;
+    height: auto;
 }
 
 #img-4{
@@ -341,19 +343,6 @@ nav{
     min-width: 500px;
 }
 
-/* .food-scope-donation-progress{
-    display: none;
-    margin-left: 0;
-    font-size: 20px;
-    letter-spacing: 1px;
-    line-height: 10px;
-    text-align: right;
-    background-color: #3BA361;
-    margin: 2rem 0;
-    width:100%;
-    margin: 1rem;
-    min-width: 500px;
-} */
 
 
 .food-scope-donation-progress p{
@@ -461,6 +450,7 @@ nav{
 }
 
 .download-flyer-btn{
+    position: relative;
     background-color: #142725;
     color: #3BA361;
     padding: 1rem;
@@ -475,6 +465,25 @@ nav{
     color: #142725;
     border: 1px solid #3BA361;
 }
+
+.download-flyer-btn svg{
+    position: absolute;
+    top: 2px;
+    right: 0px;
+}
+
+.appreciation-images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    padding: 3rem 0;
+}
+
+
+.appreciation-images img{
+    margin: auto;
+    width: 100%;
+}
+
 
 .contact-div{
     display: flex;
@@ -1007,9 +1016,9 @@ footer{
     
     #food-bank-img{
         position: relative;
-        bottom: 800px;
+        bottom: 840px;
         left: 48%;
-        width: 100%;
+        width: 80%;
         height: 100vh;
         max-height: 834px;
         max-width: 677px;
@@ -1018,7 +1027,7 @@ footer{
     .food-bank .donate-btn{
         display: block;
         position: relative;
-        bottom: 920px;
+        bottom: 900px;
         left: -100px;
         padding: 3rem;
         width:45%;
@@ -1043,7 +1052,7 @@ footer{
 
     .mini-gallery{
         display: grid;
-        grid-template-columns: 34% 34% 28%;
+        grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
         justify-items: stretch;
         align-items: center;
         padding: 0;
@@ -1053,6 +1062,7 @@ footer{
     
     .mini-gallery img{
         width:auto;
+        height: auto;
         max-width: 514px;
     }
     
@@ -1091,12 +1101,12 @@ footer{
         letter-spacing: 2px;
         line-height: 80px;
         padding-top: 4rem;
-        margin-top: 16rem;
+        margin-top: 9rem;
     }
 
     .help-section .floating-element{
         position: relative;
-        padding: 1rem 1.5rem 0.7rem 2rem;
+        padding: 2rem 1.5rem 0.7rem 2rem;
         top: -250px;
         left: -60px;
         bottom: 0;
@@ -1109,8 +1119,8 @@ footer{
 
 
     .food-scope > p{
-        margin: 0.5rem 0;
-        padding: 2rem 1.5rem 2rem 3rem;
+        margin: 0.7rem 0;
+        padding: 4rem 1.5rem 2rem 3rem;
         width: 100%;
         height: auto;
         color: #3BA361;
@@ -1129,7 +1139,7 @@ footer{
         flex-direction: row;
         position: absolute;
         width: 70%;
-        bottom: 10px;
+        bottom: 30px;
         height: 23vh;
         left: -50%;
         max-width: 1000px;
@@ -1165,7 +1175,7 @@ footer{
     }
 
     .food-scope-donation-progress .completed{
-        padding: 1.2rem 2rem;
+        padding: 0.5rem 2rem;
         text-align: right;
     }
 
@@ -1293,7 +1303,7 @@ footer{
         position: relative;
         bottom: -80px;
         flex-direction: row;
-        width: 84%;
+        width: 95%;
         height: 100%;
         margin: 2rem auto 2rem auto;
         justify-content: space-evenly;
@@ -1301,7 +1311,7 @@ footer{
         background-color: #ABD0B8;
         color: #142725;
         font-family: 'Archivo', sans-serif;
-        max-height: 600px;
+        max-height: 640px;
         max-width: 1678px;
     }
 
@@ -1316,6 +1326,7 @@ footer{
         color: #3BA35D;
         font-family: 'Archivo', sans-serif;
         font-size: 40px;
+        font-weight: 500;
         letter-spacing: 1.33px;
         line-height: 43px;
         text-align: left;
@@ -1382,6 +1393,7 @@ footer{
         font-family: 'Archivo', sans-serif;
         font-size: 40px;
         letter-spacing: 1.33px;
+        font-weight: 500;
         line-height: 43px;
         text-align: left;
     }
