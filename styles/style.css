@@ -453,7 +453,7 @@ nav{
     position: relative;
     background-color: #142725;
     color: #3BA361;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 1.8rem;
     text-decoration: none;
     transition: 0.5s !important;
     border: 1px solid #142725;
@@ -468,8 +468,16 @@ nav{
 
 .download-flyer-btn svg{
     position: absolute;
-    top: 2px;
-    right: 0px;
+    top: 40px;
+    left: 30px;
+}
+
+.download-flyer-btn .D-Line{
+    fill: #3BA361;
+}
+
+.download-flyer-btn:hover .D-Line{
+    fill: #142725;
 }
 
 .appreciation-images{
@@ -995,7 +1003,7 @@ footer{
         display: block;
         position: relative;
         top: -85px;
-        left: -2.8%;
+        left: -6%;
         padding: 3rem;
         margin: 1rem;
         background-color: #ABD0B8;
@@ -1027,7 +1035,7 @@ footer{
     .food-bank .donate-btn{
         display: block;
         position: relative;
-        bottom: 900px;
+        bottom: 870px;
         left: -100px;
         padding: 3rem;
         width:45%;
@@ -1106,7 +1114,7 @@ footer{
 
     .help-section .floating-element{
         position: relative;
-        padding: 2rem 1.5rem 0.7rem 2rem;
+        padding: 4rem 1.5rem 0.7rem 2rem;
         top: -250px;
         left: -60px;
         bottom: 0;
@@ -1285,6 +1293,8 @@ footer{
         transition: 0.5s !important;
         border: 1px solid #142725;
     }
+
+
 
     .appreciation-images{
         display: grid;
